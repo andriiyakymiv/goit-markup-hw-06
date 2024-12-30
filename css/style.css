@@ -68,10 +68,22 @@ ul {
 img {
     max-width: 100%;
     display: block;
+    height: auto;
+}
+
+input,
+textarea,
+button {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+    color: currentColor;
 }
 
 .container {
-    max-width: 1158px;
+    min-width: 320px;
     padding-right: 15px;
     padding-left: 15px;
     margin: 0 auto;
@@ -94,6 +106,25 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+@media screen and (min-width: 320px) {
+    .container {
+        max-width: 320px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+    }
+}
+
 
 /*——————————————— Header (Header section) ———————————————*/
 
