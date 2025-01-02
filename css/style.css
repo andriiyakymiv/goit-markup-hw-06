@@ -454,8 +454,47 @@ button {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: var(--gradient-hero-image), url(../images/hero-img-people-office.jpg);
+    background-image: var(--gradient-hero-image), 
+    url('../images/01-hero/hero-mobile-1x.jpg');
  }
+
+@media (min-resolution: 192dpi)  {
+    .hero__bg-image {
+        background-image: var(--gradient-hero-image),
+        url('../images/01-hero/hero-mobile-2x.jpg');
+    }
+ }
+
+@media screen and (min-width: 768px) {
+     .hero__bg-image {
+        width: 100%;
+        background-image: var(--gradient-hero-image),
+        url('../images/01-hero/hero-tablet-1x.jpg');
+     }
+}
+
+@media (min-resolution: 192dpi) {
+     .hero__bg-image {
+        background-image: var(--gradient-hero-image),
+        url('../images/01-hero/hero-tablet-2x.jpg');
+     }
+}
+
+@media screen and (min-width: 1158px) {
+    .hero__bg-image {
+        width: 100%;
+        background-image: var(--gradient-hero-image),
+        url('../images/01-hero/hero-desktop-1x.jpg');
+    }
+}
+
+@media (min-resolution: 192dpi) {
+    .hero__bg-image {
+        background-image: var(--gradient-hero-image),
+            url('../images/01-hero/hero-desktop-2x.jpg');
+    }
+}
+
 
  .hero__title {
     display: flex;
@@ -534,11 +573,6 @@ button {
     }
 }
 
-
-/* .feature__item {
-    flex-basis: calc((100% - 72px)/4);
-} */
-
 @media screen and (min-width: 768px) {
     .feature__item {
             flex-basis: calc((100% - 24px)/2);
@@ -596,10 +630,19 @@ button {
 
 .feature__text {
     font-size: 16px;
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-contact-slate);
 }
+
+@media screen and (min-width: 1158px) {
+    .feature__text {
+        font-weight: 400;
+
+    }
+}
+
 
 /*——————————————— Our Team (Third section) ———————————————*/
 .team {
@@ -645,13 +688,22 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* flex-basis: calc((100% - 72px)/4); */
     background-color: var(--color-white);
     border-radius: 0px 0px 4px 4px;
     box-shadow: var(--shadow-team-item);
 }
 
+@media screen and (min-width: 768px) {
+    .team__item {
+        flex-basis: calc((100%-24px) / 2);
+    }
+}
 
+@media screen and (min-width: 1158px) {
+    .team__item {
+        flex-basis: calc((100%-72px) / 4);
+    }
+}
 
 .team__image {
     width: 100%;
@@ -748,7 +800,6 @@ button {
 }
 
 .portfolio__item {
-    /* width: calc((100% - 48px) / 3); */
     background: #ffffff;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1107,6 +1158,12 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+    .modal__window {
+        width: 408px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
     .modal__window {
         width: 408px;
     }
