@@ -664,6 +664,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 72px;
 }
 
@@ -703,10 +704,6 @@ button {
     .team__item {
         flex-basis: calc((100%-72px) / 4);
     }
-}
-
-.team__image {
-    width: 100%;
 }
 
 .team__wrapper {
